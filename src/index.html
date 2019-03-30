@@ -9,6 +9,8 @@
     <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <script>
         // Initialize Firebase
@@ -28,23 +30,19 @@
 <body>
     <main>
         <nav>
-            <ol>
-                <li><a href="#" data-target="home" class="nav-link">HOME</a></li>
-                <li><a href="#" data-target="test" class="nav-link">DESIGUALOMÉTRO</a></li>
-                <li><a href="#" data-target="complaints" class="nav-link">FORO DE TESTIMONIOS</a></li>
+            <ol class="container">
+               <li><img class="responsive-img nav-link section" href="#" data-target="home" src="./logo-ema.png" alt=""></li>
+                                           
             </ol>
         </nav>
 
         <section id="home" class="page active">
             <h1> = M A</h1>
+            <li><a href="#" data-target="test" class="nav-link">DESIGUALOMÉTRO</a></li>
+            <li><a href="#" data-target="complaints" class="nav-link">FORO DE TESTIMONIOS</a></li>
         </section>
 
         <section id="test" class="page">
-            <h1>Desigualométro</h1>
-            <a href="#" data-target="questions" class="nav-link ">Haz el test</a>
-        </section>
-
-        <section id="questions" class="page">
             <h1 class="flow-text">Test:</h1>
             <blockquote>
                 <p>¿En tu trabajo existe la brecha de género?</p>
@@ -225,16 +223,20 @@
         </div>
         </section>
 
+       
+
         <section id="results" class="page">
             <h1>Resultados</h1>
         </section>
 
-        <section id="complaints" class="page">
+        <section id="complaints" class="page row">
             <div>
-                <h1>Compártenos tu testimonio</h1>
-                <h3>Testimonio</h3>
+                <h3>Compártenos tu testimonio</h3>
                 <input type="text" id="txt-name" name="name" placeholder="Nombre">
+                <input type="text" id="email" name="testimony" placeholder="Correo electrónico">
+                <input type="text" id="area-testimony" name="testimony" placeholder="Área de tu trabajo">
                 <input type="text" id="txt-testimony" name="testimony" placeholder="Testimonio">
+                
                 <!---modal-->
                 <a id="share-testimony">Enviar</a>
             </div>
