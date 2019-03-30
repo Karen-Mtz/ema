@@ -1,0 +1,19 @@
+{
+  "name": "ema",
+  "version": "1.0.0",
+  "description": "- [Descripción](#resumen-del-proyecto)\r - [Problema](#problema)\r - [Objetivos](#objetivos)\r - [Contexto](#contexto)\r - [Definición del público objetivo](#definicion-del-publico-objetivo)\r - [Benchmark](#benchmark)\r - [Prototipo de baja fidelidad](#prototipo-de-baja-fidelidad)\r - [Test de Usabilidad](#test-de-usabilidad)\r - [Propuesta](#propuesta)\r - [Prototipo de alta fidelidad](#prototipo-de-alta-fidelidad)\r - [Herramientas utilizadas](#herramientas-utilizadas)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lawrayette/ema.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lawrayette/ema/issues"
+  },
+  "homepage": "https://github.com/lawrayette/ema#readme"
+}
