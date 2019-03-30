@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> = MA</title>
+    <meta name="viewport" content="width=device-width">
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDei5o3cHI_QyjBrn7vuKPPyOwhojF8CoM",
+            authDomain: "emma-3c158.firebaseapp.com",
+            databaseURL: "https://emma-3c158.firebaseio.com",
+            projectId: "emma-3c158",
+            storageBucket: "emma-3c158.appspot.com",
+            messagingSenderId: "1033876697696"
+        };
+        firebase.initializeApp(config);
+    </script>
+    
+</head>
+
+<body>
+    <main>
+        <nav>
+            <ol>
+                <li><a href="#" data-target="home" class="nav-link">HOME</a></li>
+                <li><a href="#" data-target="test" class="nav-link">DESIGUALOMÉTRO</a></li>
+                <li><a href="#" data-target="complaints" class="nav-link">FORO DE TESTIMONIOS</a></li>
+            </ol>
+        </nav>
+
+        <section id="home" class="page active">
+            <h1> = M A</h1>
+        </section>
+
+        <section id="test" class="page">
+            <h1>Desigualométro</h1>
+            <a href="#" data-target="questions" class="nav-link ">Haz el test</a>
+        </section>
+
+        <section id="questions" class="page">
+            <h1 class="flow-text">Test:</h1>
+            <blockquote>
+                <p>¿En tu trabajo existe la brecha de género?</p>
+            </blockquote>
+            <form>
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>Sí</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>No</span>
+                    </label>
+                </p>
+            </form>
+            <blockquote>
+                <p>¿Dentro del personal laboral sientes que hay una igualdad en cuanto a la carga de trabajo entre
+                    el sexo masculino y femenino?</p>
+            </blockquote>
+            <form>
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>Sí</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>No</span>
+                    </label>
+                </p>
+            </form>
+            <blockquote>
+                <p>¿Alguna vez has tenido la oportunidad de crecimiento en tu empresa?</p>
+            </blockquote>
+            <form>
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>Sí</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>No</span>
+                    </label>
+                </p>
+            </form>
+            <blockquote>
+                <p>¿Sufriste acoso sexual en la empresa donde laboras alguna vez?</p>
+            </blockquote>
+            <form>
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>Sí</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>No</span>
+                    </label>
+                </p>
+            </form>
+            <blockquote>
+                <p>¿Has tenido que realizar trabajos extra, solo por impresionar al jefe o quedar bien?</p>
+            </blockquote>
+            <form>
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>Sí</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>No</span>
+                    </label>
+                </p>
+            </form>
+            <blockquote>
+                <p>¿Conoce algún caso en el cual alguna compañera haya tenido que realizar “favores” al jefe para
+                    una promoción?</p>
+            </blockquote>
+            <form>
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>Sí</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>No</span>
+                    </label>
+                </p>
+            </form>
+            <blockquote>
+                <p>¿En la empresa donde trabajas, los baños son unisex?</p>
+            </blockquote>
+            <form >
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>Sí</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>No</span>
+                    </label>
+                </p>
+            </form>
+            <blockquote>
+                <p>¿En la empresa en donde estas conoces algún caso en el que el hombre gana más que una mujer?</p>
+            </blockquote>
+            <form>
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>Sí</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>No</span>
+                    </label>
+                </p>
+            </form>
+            <blockquote>
+                <p>¿Considera que la hacen menos por ser mujer en su empresa?</p>
+            </blockquote>
+            <form>
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>Sí</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>No</span>
+                    </label>
+                </p>
+            </form>
+            <blockquote>
+                <p>Imagina que estás embarazada, ¿Crees que la empresa en la que estas tienen las condiciones
+                    favorables para seguir laborando?</p>
+            </blockquote>
+            <form >
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>Sí</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>No</span>
+                    </label>
+                </p>
+            </form>
+            <div class="section">
+                <a href="#" data-target="results" class="nav-link section">Conocer resultados</a>
+            </div>
+        </div>
+        </section>
+
+        <section id="results" class="page">
+            <h1>Resultados</h1>
+        </section>
+
+        <section id="complaints" class="page">
+            <div>
+                <h1>Compártenos tu testimonio</h1>
+                <h3>Testimonio</h3>
+                <input type="text" id="txt-name" name="name" placeholder="Nombre">
+                <input type="text" id="txt-testimony" name="testimony" placeholder="Testimonio">
+                <!---modal-->
+                <a id="share-testimony">Enviar</a>
+            </div>
+            <div id="modal-thnks4share"></div>
+            <div id="forum"></div>
+        </section>
+    </main>
+    <script src="spa.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
