@@ -15,6 +15,10 @@ li {
 }
 
 /**** PAGES ****/
+.responsive-img {
+    max-width: 24% !important;
+    height: auto;
+}
 .page{
     display: none;
     width: 100%;
