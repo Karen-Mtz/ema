@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <script>
         // Initialize Firebase
         var config = {
@@ -31,7 +31,8 @@
     <main>
         <nav>
             <ol class="container">
-               <li><img class="responsive-img nav-link section" href="#" data-target="home" src="./logo-ema.png" alt=""></li>
+
+              <li><img class="responsive-img nav-link section" href="#" data-target="home" src="./logo-ema.png" alt=""></li>
                                            
             </ol>
         </nav>
@@ -231,11 +232,11 @@
 
         <section id="complaints" class="page row">
             <div>
-                <h3>Compártenos tu testimonio</h3>
-                <input type="text" id="txt-name" name="name" placeholder="Nombre">
-                <input type="text" id="email" name="testimony" placeholder="Correo electrónico">
-                <input type="text" id="area-testimony" name="testimony" placeholder="Área de tu trabajo">
-                <input type="text" id="txt-testimony" name="testimony" placeholder="Testimonio">
+                <h2>FORO DE TESTIMONIOS</h2>
+                <textarea  id="txt-name" class="message" placeholder="Nombre"></textarea>
+                <textarea  id="email" class="message" placeholder="Correo electrónico"></textarea>
+                <textarea  id="area-testimony" class="message" placeholder="Área de tu trabajo"></textarea>
+                <textarea  id="txt-testimony" class="message-large" placeholder="Testimonio" data-length="120"></textarea>
                 
                 <!---modal-->
                 <a id="share-testimony">Enviar</a>

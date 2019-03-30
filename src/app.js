@@ -45,10 +45,9 @@ db.collection("testimonies").onSnapshot((querySnapshot) => {
         <p>${doc.data().area}</p>
         <p  class = "section">${doc.data().testimony}</p>
         </div>
+        <button class = "btn1"><i class="fas fa-comments"></i></button></div>
         </blockquote>
-        <div>
-        <button class = "waves-effect waves-light btn-large"><i class="fas fa-comments"></i></button></div>
-        </div>
+
         `
     })
   });
