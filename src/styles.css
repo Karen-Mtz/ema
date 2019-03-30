@@ -83,3 +83,19 @@ h2 {
     border-radius: 20px;
     padding-left: 5px;
 }
+#txt-name {
+    background-color: white !important;    
+    border-radius: 5px !important;
+}
+#email {
+    background-color: white !important;    
+    border-radius: 5px !important;
+}
+#area-testimony {
+    background-color: white !important;    
+    border-radius: 5px !important;
+}
+#txt-testimony {
+    background-color: white !important;    
+    border-radius: 5px !important;
+}
