@@ -39,13 +39,7 @@ li {
 #detail{
     background-color: hsl(240, 50%, 80%);
 }
-h1{
-    font-size: 2rem;
-    font-weight: 600;
-    transition: all 0.4s;
-}
-
-    .btn1 {
+ .btn1 {
         font-size: 14px;
         outline: 0;
         border: none;
@@ -68,7 +62,7 @@ h1{
 #complaints {
     background-color: hsl(330, 40%, 98%)
 }
-h2 {
+h1 {
     font-family: 'Oswald' , sans-serif;
     color: #7e6cb0
 }
